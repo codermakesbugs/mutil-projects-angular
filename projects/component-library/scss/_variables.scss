@@ -1,0 +1,16 @@
+:root {
+  --navbar-has-user-info: 54px;
+  --navbar-has-navigation: 79px;
+  --incident-header-height: 64px;
+  --app-header-height: calc(
+    var(--navbar-has-user-info) + var(--navbar-has-navigation)
+  );
+  --standard-padding-bottom-material: 21.5px;
+  --duty-roster-left-width: 220px;
+  --font-weight-bold: 600;
+  --font-size-normal: 1.6rem;
+  --font-size-small: 1.2rem;
+  --font-size-14: 1.4rem;
+  --font-size-20: 2rem;
+  --font-size-28: 2.8rem;
+}

@@ -1,0 +1,20 @@
+@use '@angular/material' as mat;
+
+:root {
+  --font-family-regular: 'Roboto-Regular';
+  --font-family-medium: 'Roboto-Medium';
+  font-size: 62.5%;
+}
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../assets/fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url('../assets/fonts/Roboto-Medium.ttf') format('truetype');
+}
+
+$typography: mat.define-typography-config(
+  $font-family: 'Roboto-Regular'
+);

@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+.step__form {
+  padding: 10px 40px;
+  & .form {
+    display: flex;
+    flex-direction: column;
+    &__group {
+      display: flex;
+      gap: 0px 32px;
+      &--vertical {
+        flex-direction: column;
+      }
+    }
+    &__item {
+      flex: 1;
+      &--align-end {
+        align-self: end;
+      }
+      &--no-stretch {
+        flex: 0 calc(50% - 16px);
+      }
+    }
+  }
+}

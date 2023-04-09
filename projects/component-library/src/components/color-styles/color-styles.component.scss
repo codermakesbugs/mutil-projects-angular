@@ -70,3 +70,75 @@
   background-color: var(--neutra-outline-color);
   color: var(--accent-primary-text-color);
 }
+.main {
+  margin: 24px;
+  padding: 30px;
+  background-color: var(--neutral-background-color);
+}
+.box {
+  width: 340px;
+  height: 68px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.primary {
+  background-color: var(--accent-primary-color);
+  color: var(--accent-primary-text-color);
+}
+
+.secondary {
+  background-color: var(--accent-secondary-color);
+  color: var(--accent-secondary-text-color);
+}
+
+.hover {
+  background-color: var(--semantic-hover-color);
+  color: var(--semantic-hover-text-color);
+}
+
+.disable {
+  background-color: var(--semantic-disable-color);
+  & .disable--primary {
+    color: var(--semantic-disable-text-primary-color);
+  }
+  & .disable--secondary {
+    color: var(--semantic-disable-text-secondary-color);
+  }
+}
+
+.error {
+  background-color: var(--semantic-error-color);
+  color: var(--semantic-error-text-color);
+}
+
+.successfull {
+  background-color: var(--semantic-success-color);
+  color: var(--semantic-success-text-color);
+}
+
+.background {
+  background-color: var(--neutral-background-color);
+  & .background--primary {
+    color: var(--neutral-background-text-primary-color);
+  }
+  & .background--secondary {
+    color: var(--neutral-background-text-secondary-color);
+  }
+  border: 1px solid var(--border-color);
+}
+
+.surface--primary {
+  background-color: var(--neutral-surface-primary-color);
+  color: var(--neutral-surface-text-color);
+}
+
+.surface--secondary {
+  background-color: var(--neutral-surface-secondary-color);
+  color: var(--neutral-surface-text-color);
+}
+
+.outline {
+  background-color: var(--neutra-outline-color);
+  color: var(--accent-primary-text-color);
+}
