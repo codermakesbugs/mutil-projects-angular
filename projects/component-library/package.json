@@ -1,6 +1,10 @@
 {
   "name": "component-library",
   "version": "0.0.1",
+  "scripts": {
+    "lint": "ng lint",
+    "prettier": "npx prettier --write ./src"
+  },
   "peerDependencies": {
     "@angular/animations": "^15.2.0",
     "@angular/common": "^15.2.0",
@@ -12,11 +16,12 @@
     "@angular/platform-browser-dynamic": "^15.2.0",
     "@angular/router": "^15.2.0",
     "rxjs": "~7.8.0",
-    "tslib": "^2.3.0",
     "zone.js": "~0.12.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"
   },
-  "sideEffects": false
+  "lint-staged": {
+    "**/*": "prettier --check --ignore-unknown"
+  }
 }
