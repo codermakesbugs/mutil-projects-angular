@@ -1,16 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
-
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @use '@angular/material' as mat;
 // Plus imports for other components in your app.
 
 // import font
-@import '../../../dist/component-library/scss/_font.scss';
-@import '../../../dist/component-library/scss/_colormap.scss';
-@import '../../../dist/component-library/scss/_theme.scss';
-@import '../../../dist/component-library/scss/_variables.scss';
-@import '../../../dist/component-library/scss/_stepform.scss';
+@import '../scss/_font.scss';
+@import '../scss/_colormap.scss';
+@import '../scss/theme.scss';
+@import '../scss/_variables.scss';
+@import '../scss/_stepform.scss';
 
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
@@ -54,5 +52,5 @@ $app-theme: mat.define-light-theme(
 @include mat.all-component-themes($app-theme);
 
 @include mat.all-component-typographies($typography);
-@import '../../../dist/component-library/scss/_typography.scss';
-@import '../../../dist/component-library/scss/_materialoverride.scss';
+@import './scss/_typography.scss';
+@import './scss/materialoverride.scss';

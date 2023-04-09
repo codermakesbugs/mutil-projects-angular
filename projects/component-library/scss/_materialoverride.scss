@@ -1,0 +1,377 @@
+.mat-typography {
+  margin: 0;
+  background-color: var(--body-background-color);
+  h1 {
+    font-size: var(--font-size-28);
+    line-height: 37px;
+  }
+  h2 {
+    font-size: var(--font-size-24);
+    line-height: 32px;
+  }
+  h3 {
+    font-size: var(--font-size-normal);
+    line-height: 21px;
+  }
+  .input-field-text {
+    color: var(--input-text-color);
+  }
+  .input-field-label {
+    font-size: var(--font-size-small);
+    line-height: 16px;
+    color: var(--accent-primary-color);
+  }
+  button {
+    & span {
+      line-height: 36px;
+    }
+  }
+  .mat-raised-button {
+    &:hover {
+      background-color: var(--semantic-hover-color);
+      color: var(--semantic-hover-text-color);
+    }
+    &.mat-button-disabled {
+      background-color: var(--semantic-disable-color);
+      color: var(--semantic-disable-text-primary-color);
+      opacity: 1;
+      &:hover {
+        background-color: var(--semantic-disable-color);
+        color: var(--semantic-disable-text-primary-color);
+        opacity: 1;
+      }
+    }
+  }
+
+  .mat-stroked-button {
+    border: 1px solid var(--accent-primary-color);
+    &:hover {
+      background-color: var(--semantic-hover-color);
+      color: var(--semantic-hover-text-color);
+    }
+    &.mat-button-disabled {
+      background-color: var(--semantic-disable-color);
+      color: var(--semantic-disable-text-primary-color);
+      border: none;
+      opacity: 1;
+      &:hover {
+        background-color: var(--semantic-disable-color);
+        color: var(--semantic-disable-text-primary-color);
+        opacity: 1;
+      }
+    }
+  }
+
+  .button-link {
+    color: var(--accent-primary-color);
+    cursor: pointer;
+    text-decoration: none;
+    &:hover {
+      font-family: var(--font-family-regular);
+      text-decoration: underline;
+    }
+    & span:hover {
+      font-family: var(--font-family-regular);
+    }
+  }
+  .button-link-disabled {
+    color: var(--semantic-disable-text-primary-color);
+    line-height: 16px;
+  }
+  .mat-icon {
+    line-height: 24px;
+  }
+  .icon-button {
+    border: 1px solid var(--accent-primary-color);
+  }
+  .mat-radio-disabled .mat-radio-outer-circle {
+    background-color: var(--semantic-disable-color);
+    border-color: var(--semantic-disable-text-primary-color) !important;
+  }
+  .mat-button-toggle-checked {
+    background-color: var(--accent-primary-color);
+    color: var(--accent-primary-text-color);
+  }
+  .mat-button-toggle-appearance-standard {
+    border-radius: 15px !important;
+    & .mat-button-toggle-label-content {
+      line-height: 24px;
+      padding: 3px 20px;
+    }
+  }
+  .mat-radio-container {
+    height: 20px;
+    width: 20px;
+  }
+
+  .mat-radio-inner-circle {
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    top: 2px;
+    line-height: 16px;
+  }
+
+  .material-icons {
+    font-size: var(--font-size-normal);
+  }
+  .mat-checkbox-checked {
+    & .mat-checkbox-background {
+      border: 2px solid var(--accent-primary-color);
+      & .mat-checkbox-checkmark {
+        fill: #006699;
+      }
+      & .mat-checkbox-checkmark-path {
+        stroke: var(--accent-primary-color) !important;
+      }
+    }
+  }
+  mat-label {
+    color: var(--accent-primary-color);
+    font-weight: 500;
+  }
+  input {
+    color: var(--input-text-color);
+  }
+  .mat-form-field:hover {
+    mat-label {
+      color: var(--accent-primary-color);
+    }
+    .mat-form-field-ripple {
+      height: 1px;
+      background-color: var(--accent-primary-color);
+    }
+  }
+  .mat-form-field-appearance-fill .mat-form-field-flex {
+    background-color: var(--neutral-surface-secondary-color);
+    height: fit-content;
+    padding: 6px 0px 0px 16px;
+  }
+  .mat-form-field-appearance-fill .mat-form-field-infix {
+    padding: 8px 0 9px;
+    border-top: 12px solid transparent;
+  }
+  .mat-form-field-disabled {
+    .mat-form-field-flex {
+      background-color: var(--semantic-disable-color);
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: var(--standard-padding-bottom-material);
+        left: 0px;
+        height: 1px;
+        width: 100%;
+        background-color: var(--mat-form-background-color);
+      }
+    }
+  }
+  .mat-select-disabled {
+    mat-label {
+      color: var(--semantic-disable-text-primary-color);
+    }
+    .mat-form-field-flex {
+      background-color: var(--semantic-disable-color);
+    }
+    & :hover {
+      mat-label {
+        color: var(--semantic-disable-text-primary-color);
+      }
+    }
+  }
+
+  .readonly {
+    & .mat-form-field-flex {
+      background-color: var(--semantic-disable-color);
+    }
+    & :hover {
+      & .mat-form-field-ripple {
+        height: 0px;
+      }
+    }
+    & .mat-form-field-underline::before {
+      background-color: transparent;
+    }
+    & .mat-form-field-ripple {
+      height: 0px;
+    }
+  }
+  .mat-error {
+    color: var(--semantic-error-color);
+    font-size: var(--font-size-14);
+  }
+  .mat-form-field-invalid .mat-form-field-ripple {
+    background-color: var(--semantic-error-color);
+    transform: scaleX(1);
+  }
+  .mat-option {
+    &:hover {
+      background-color: var(--semantic-hover-color);
+    }
+  }
+  .mat-select-arrow {
+    color: var(--accent-primary-color);
+  }
+
+  .mat-form-field .mat-select.mat-select-invalid .mat-select-arrow,
+  .mat-form-field.mat-form-field-invalid
+    .mat-form-field-label
+    .mat-form-field-required-marker {
+    color: var(--semantic-error-color);
+  }
+
+  .mat-pseudo-checkbox-checked::after {
+    border-color: var(--accent-primary-color);
+  }
+  .mat-primary .mat-pseudo-checkbox-checked,
+  .mat-primary .mat-pseudo-checkbox-indeterminate {
+    background: var(--semantic-hover-color);
+    border-color: var(--accent-primary-color);
+  }
+
+  & .medium--font {
+    font-family: var(--font-family-medium);
+  }
+
+  .mat-primary .mat-option.mat-selected {
+    color: var(--input-text-color);
+  }
+
+  .mat-slide-toggle,
+  .mat-radio-button,
+  .mat-radio-checked,
+  .mat-checkbox {
+    & .mat-ripple-element {
+      background-color: var(--semantic-hover-color) !important;
+    }
+  }
+  .mat-radio-checked,
+  .mat-checkbox-checked,
+  .mat-slide-toggle.mat-checked {
+    & .mat-ripple-element {
+      background: none !important;
+    }
+  }
+  .mat-slide-toggle:not(.mat-disabled):hover,
+  .mat-radio-button:not(.mat-radio-disabled):hover,
+  .mat-checkbox:not(.mat-checkbox-disabled):hover {
+    .mat-ripple-element {
+      opacity: 0.5;
+    }
+  }
+  .mat-slide-toggle.mat-checked .mat-slide-toggle-bar {
+    background-color: var(--semantic-hover-color);
+  }
+
+  .mat-toolbar {
+    padding: 0;
+  }
+  .mat-datepicker-content .mat-calendar {
+    height: auto !important;
+  }
+  .mat-placeholder-required {
+    display: none !important;
+  }
+
+  .mat-select-panel {
+    min-width: calc(100% + 32px) !important;
+    border-radius: 0px !important;
+    border-top-style: none;
+  }
+  & .group-checkbox {
+    &__available-auxiliary {
+      &.ng-touched.ng-invalid {
+        color: var(--semantic-error-color) !important;
+        & .mat-checkbox-background {
+          border: 2px solid var(--semantic-error-color);
+        }
+      }
+    }
+  }
+  .group--checkbox__inform {
+    &.ng-touched.ng-invalid {
+      color: var(--semantic-error-color) !important;
+      & .mat-checkbox-background {
+        border: 2px solid var(--semantic-error-color);
+      }
+    }
+  }
+  .personal-validation {
+    & .mat-form-field-ripple {
+      opacity: 1;
+      background-color: var(--semantic-error-color);
+      transform: scaleX(1);
+    }
+  }
+
+  .vehicle-validation {
+    & .mat-form-field-ripple {
+      opacity: 1;
+      background-color: var(--semantic-error-color);
+      transform: scaleX(1);
+    }
+  }
+
+  input.mat-checkbox-input:focus ~ .mat-ripple,
+  input.mat-radio-input:focus ~ .mat-ripple,
+  input.mat-slide-toggle-input:focus
+    ~ .mat-slide-toggle-thumb-container
+    > .mat-ripple {
+    background-color: var(--semantic-hover-color) !important;
+    opacity: 0.5;
+    border-radius: 50%;
+  }
+
+  .mat-calendar-body-label {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+
+  .mat-snack-bar-container {
+    position: absolute;
+    top: 70px;
+    left: calc(100vw - 32px);
+    transform: translateX(-100%) !important;
+    margin: 0;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+  }
+
+  .mat-form-field-invalid {
+    & .mat-form-field-ripple {
+      opacity: 1 !important;
+    }
+  }
+  mat-error {
+    opacity: 0;
+  }
+  .mat-datepicker-toggle-default-icon {
+    fill: var(--accent-primary-color);
+  }
+  .mat-datepicker-toggle {
+    width: 24px;
+    & button {
+      width: 24px;
+    }
+  }
+  app-translation {
+    mat-form-field {
+      padding: 5px 5px 0px 5px !important;
+      & .mat-form-field-wrapper {
+        padding-bottom: 5px !important;
+        & .mat-form-field-underline {
+          bottom: 5px;
+        }
+      }
+    }
+    & .cdk-virtual-scroll-content-wrapper {
+      & app-translation-row:nth-child(2n) {
+        & .row__divide {
+          background-color: var(--surface-2);
+        }
+      }
+      width: 100%;
+    }
+  }
+}

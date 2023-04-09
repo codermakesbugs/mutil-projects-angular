@@ -1,0 +1,21 @@
+$custom-primary-palete: (
+  Main: var(--accent-primary-color),
+  Light: var(--semantic-hover-color),
+  Dark: var(--accent-primary-color),
+  contrast: (
+    Main: var(--accent-primary-text-color),
+    Light: var(--accent-primary-color),
+    Dark: var(--accent-primary-text-color)
+  )
+);
+
+$custom-accent-palete: (
+  Main: var(--semantic-hover-color),
+  Light: var(--semantic-hover-color),
+  Dark: var(--accent-primary-color),
+  contrast: (
+    Main: var(--accent-primary-color),
+    Light: var(--accent-primary-color),
+    Dark: var(--accent-primary-text-color)
+  )
+);

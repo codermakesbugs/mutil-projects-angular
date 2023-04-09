@@ -1,0 +1,156 @@
+:root {
+  --accent-primary-color: #006699;
+  --accent-primary-text-color: #ffffff;
+  --semantic-hover-color: #d1e7f8;
+  --semantic-hover-text-color: #006699;
+  --accent-secondary-color: #dc0018;
+  --accent-secondary-text-color: #ffffff;
+  --semantic-disable-color: #d6d6d6;
+  --semantic-disable-text-primary-color: #777777;
+  --semantic-disable-text-secondary-color: #006699;
+  --semantic-error-color: #b00020;
+  --semantic-error-text-color: #ffffff;
+  --semantic-success-color: #00813a;
+  --semantic-success-text-color: #ffffff;
+  --neutral-background-color: #ffffff;
+  --neutral-background-text-primary-color: #000000;
+  --neutral-background-text-secondary-color: #4d4d4d;
+  --neutral-surface-primary-color: #f4f4f4;
+  --neutral-surface-secondary-color: #f2f7fa;
+  --neutral-surface-text-color: #000000;
+  --neutra-outline-color: #293d47;
+  --black-text-color: #181818;
+  --black-color: black;
+  --input-text-color: #49454f;
+  --primary-on-hover-on-disable-2: #006699;
+  --surface-2: #f2f7fa;
+  --variant-1: #cce0eb;
+  --table-header-color: #efefef;
+  --body-background-color: #f5f5f5;
+  --border-color: #e5e5e5;
+  --primary-box-shadow-color: #00000029;
+  --panel-box-shadow-color: #63539f29;
+  --neutral-text-color-with-rgba: #000000de;
+  --neutral-backdrop-background-color: #00000052;
+  --mat-step-icon-in-null-status-background-color: #0000008a;
+  --box-shadow-color: #00000014;
+  --note-item-box-shadow-color: #2d3d464f;
+  --mat-element-disabled-text-color: #00000061;
+  --mat-form-background-color: #0000006b;
+  --scrollbar-track-background-color: #f1f1f1;
+  --scrollbar-thumb-background-color: #c5c5c5;
+  --scrollbar-thumb-hover-background-color: #555;
+  --info-icon-notification-color: #0043ce;
+  --error-icon-notification-color: #da1e28;
+  --warning-icon-notification-color: #f1c21b;
+  --success-icon-notification-color: #24a148;
+  --info-background-notification-color: #edf5ff;
+  --error-background-notification-color: #fff1f1;
+  --warning-background-notification-color: #fff8e1;
+  --success-background-notification-color: #defbe6;
+  --info-border-notification-color: #a7c1f4;
+  --error-border-notification-color: #f4b2b5;
+  --warning-border-notification-color: #ffecae;
+  --success-border-notification-color: #ddf0e2;
+  --duty-gradient-color-filter-platinum: linear-gradient(
+    to bottom right,
+    #d5daeb,
+    #596279
+  );
+  --duty-gradient-color-filter-gold: linear-gradient(
+    to bottom right,
+    #fdf8ce,
+    #cba016
+  );
+  --duty-gradient-color-filter-silver: linear-gradient(
+    to bottom right,
+    #d6ddde,
+    #93a1a2
+  );
+  --duty-gradient-color-filter-bronze: linear-gradient(
+    to bottom right,
+    #cc8845,
+    #77420b
+  );
+  --duty-horizontal-gradient-color-filter-platinum: linear-gradient(
+    to right,
+    #d5daeb,
+    #596279
+  );
+  --duty-horizontal-gradient-color-filter-gold: linear-gradient(
+    to right,
+    #fdf8ce,
+    #cba016
+  );
+  --duty-horizontal-gradient-color-filter-silver: linear-gradient(
+    to right,
+    #d6ddde,
+    #93a1a2
+  );
+  --duty-horizontal-gradient-color-filter-bronze: linear-gradient(
+    to right,
+    #cc8845,
+    #77420b
+  );
+}
+
+.primary {
+  background-color: var(--accent-primary-color);
+  color: var(--accent-primary-text-color);
+}
+
+.secondary {
+  background-color: var(--accent-secondary-color);
+  color: var(--accent-secondary-text-color);
+}
+
+.hover {
+  background-color: var(--semantic-hover-color);
+  color: var(--semantic-hover-text-color);
+}
+
+.disable {
+  background-color: var(--semantic-disable-color);
+  & .disable--primary {
+    color: var(--semantic-disable-text-primary-color);
+  }
+  & .disable--secondary {
+    color: var(--semantic-disable-text-secondary-color);
+  }
+}
+
+.error {
+  background-color: var(--semantic-error-color);
+  color: var(--semantic-error-text-color);
+}
+
+.successfull {
+  background-color: var(--semantic-success-color);
+  color: var(--semantic-success-text-color);
+}
+
+.background {
+  background-color: var(--neutral-background-color);
+  & .background--primary {
+    color: var(--neutral-background-text-primary-color);
+  }
+  & .background--secondary {
+    color: var(--neutral-background-text-secondary-color);
+  }
+  border: 1px solid var(--border-color);
+}
+
+.surface--primary {
+  background-color: var(--neutral-surface-primary-color);
+  color: var(--neutral-surface-text-color);
+}
+
+.surface--secondary {
+  background-color: var(--neutral-surface-secondary-color);
+  color: var(--neutral-surface-text-color);
+}
+
+.outline {
+  background-color: var(--neutra-outline-color);
+  color: #ffffff;
+}
